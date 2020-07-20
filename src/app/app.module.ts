@@ -5,13 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { InventaireGlobalComponent } from './inventaire/inventaire-global/inventaire-global.component';
-import { InventaireAjouterGraineComponent } from './inventaire/inventaire-ajouter-graine/inventaire-ajouter-graine.component';
 import { InventaireDetailComponent } from './inventaire/inventaire-detail/inventaire-detail.component';
+import { InventaireListComponent } from './inventaire/inventaire-list/inventaire-list.component';
+import { InventaireCardComponent } from './inventaire/inventaire-card/inventaire-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InventaireAjouterGraineComponent
+    InventaireDetailComponent,
+    InventaireListComponent,
+    InventaireCardComponent,
+    InventaireGlobalComponent
   ],
   imports: [
     BrowserModule,
