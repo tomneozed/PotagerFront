@@ -8,6 +8,7 @@ import { InventaireGlobalComponent } from './inventaire/inventaire-global/invent
 import { InventaireDetailComponent } from './inventaire/inventaire-detail/inventaire-detail.component';
 import { InventaireListComponent } from './inventaire/inventaire-list/inventaire-list.component';
 import { InventaireCardComponent } from './inventaire/inventaire-card/inventaire-card.component';
+import { StyleComponent } from './directive/style/style.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { InventaireCardComponent } from './inventaire/inventaire-card/inventaire
     InventaireDetailComponent,
     InventaireListComponent,
     InventaireCardComponent,
-    InventaireGlobalComponent
+    InventaireGlobalComponent,
+    StyleComponent
   ],
   imports: [
     BrowserModule,

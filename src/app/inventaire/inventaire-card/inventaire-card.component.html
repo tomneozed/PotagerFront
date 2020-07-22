@@ -1,4 +1,5 @@
-<div class="col-md-12 col-sm-12">
+<div class="col-md-12 col-sm-12"
+    (click)="selectPlante()">
     <div class="card-container">
         <div class="card">
             <div class="front">
@@ -6,11 +7,11 @@
                     <img src="">
                 </div>
                 <div class="user">
-                    <img class="img-circle" src="assets/images/tomate_berao.jpg">
+                    <img class="img-circle" src="{{plante.img}}">
                 </div>
                 <div class="content">
                     <div class="main">
-                        <h3 class="name">Tomate de Berao</h3>
+                        <h3 class="name">{{plante.nom_commun}} {{plante.variete}}</h3>
                         <p class="text-center">SEMIS : F, M, A, M, J</p>
                         <p class="text-center">PLANTATION : A, M, J</p>
                     </div>
@@ -26,7 +27,7 @@
                 <div class="content">
                     <div class="main">
                         <h4 class="text-center">SOLANIUM LYCOPERSICUM</h4>
-                        <p class="text-center">Tomate rouge de Berao</p>
+                        <p class="text-center">{{plante.nom_commun}} {{plante.variete}}</p>
 
                         <div class="stats-container">
                             <div class="stats">

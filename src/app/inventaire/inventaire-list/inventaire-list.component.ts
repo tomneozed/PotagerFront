@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Plante } from 'src/app/Model/Plante';
 
 @Component({
   selector: 'app-inventaire-list',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InventaireListComponent implements OnInit {
 
+  @Input() plantes : Plante[];
+  @Output() selectedPlante = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  selectPlante(selectedPlante){
+    this.selectedPlante.emit(selectedPlante);
   }
 
 }

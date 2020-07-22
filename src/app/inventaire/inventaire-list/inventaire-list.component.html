@@ -1,11 +1,7 @@
 <div class="row">
-    <div class="col-md-4">
-        <app-inventaire-card></app-inventaire-card>
-    </div>
-    <div class="col-md-4">
-        <app-inventaire-card></app-inventaire-card>
-    </div>
-    <div class="col-md-4">
-        <app-inventaire-card></app-inventaire-card>
-    </div>
+    <app-inventaire-card class="col-md-4"
+                         *ngFor="let plante of plantes"
+                         (selectedPlante)="selectPlante($event)"
+                         [plante]="plante">
+    </app-inventaire-card>
 </div>

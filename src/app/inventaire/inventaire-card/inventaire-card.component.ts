@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Plante } from 'src/app/Model/Plante';
 
 @Component({
   selector: 'app-inventaire-card',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InventaireCardComponent implements OnInit {
 
+  @Input() plante: Plante;
+  @Output() selectedPlante = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  selectPlante(){
+    this.selectedPlante.emit(this.plante);
   }
 
 }

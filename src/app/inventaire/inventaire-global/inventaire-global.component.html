@@ -1,2 +1,4 @@
 <p>FILTRES : NOM  DATE  TYPE  GRAINE</p>
-<app-inventaire-list></app-inventaire-list>
+<app-inventaire-list (selectedPlante)="selectPlante($event)" [plantes]="plantes"></app-inventaire-list>
+<app-inventaire-detail [plante]="selectedPlante"></app-inventaire-detail>
+<app-style></app-style>
